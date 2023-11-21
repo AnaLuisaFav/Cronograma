@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: #414141;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 100px;
+}
+
+table {
+    display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.terminar-modulo {
+    display: flex;
+	align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.duration {
+    position: relative;
+}
+
+.clock-icon {
+    background-image: url(clock.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 14px;
+}
+
+.tempoInput {
+    padding-left: 22px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+input {
+    padding: 6px;
+    height: 11px;
+	border: 1px solid #a3a3a3;
+	border-radius: 5px;
+    width: 100px;
+    margin: 3px;
+}
+
+input[type="text"] {
+    width: 300px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
+input[type="text"].tempoInput {
+    width: 60px;
+    text-align: center;
+
+}
+
+select, button#addRowButton, button#timeButton {
+    font-family: "Montserrat", sans-serif;
+}
+
+button#addRowButton, button#timeButton {
+    padding: 6px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    width: 160px
+}
+
+.modulo {
+    background-color: white;
+    color: black;
+}
+
+select {
+    height: 25px;
+	border: 1px solid #a3a3a3;
+	border-radius: 5px;
+    margin: 3px 5px 3px 3px;
+    color: rgb(101 25 23);
+    background-color: rgb(215 92 92 / 83%);
+    font-weight: bold;
+}
+
+option {
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+
+
+button#addRowButton {
+    background-color: #4eaec9;
+    color: #0d3559;
+}
+
+button#timeButton {
+    background-color: #cd668cd4;
+    color: rgb(33 8 35 / 83%);
+}
+
+div.horas-dia {
+    letter-spacing: 2px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.final {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tempo-dias {
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    color: #102f24 
+    /* #481255 */;
+    background: linear-gradient(90deg, rgb(216 213 217) 0%, rgb(210 239 245) 48%, rgb(169 244 220) 100%);
+    /*linear-gradient(90deg, rgba(217,213,213,1) 0%, rgb(228 215 241) 48%, rgb(244 180 169) 100%);*/
+    width: 100%;
+    top: 0;
+}
+
+.total h2, .horas-dia h2 {
+    font-size: 0.9em;
+    margin: 10px;
+    letter-spacing: 2px;
+}

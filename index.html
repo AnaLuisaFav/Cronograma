@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma - Mentoria em Testes de Software</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="crono.png">
+</head>
+<body>
+    <section class="all">
+        <select class="modulo" id="modulo-select">
+            <option value="1"><h1>Módulo 1 - Boas vindas e Instruções Gerais</h1></option>
+            <option value="2"><h1>Módulo 2 - A mentalidade do QA</h1></option>
+            <option value="3"><h1>Módulo 3 - Testes no modelo Cascata</h1></option>
+            <option value="4"><h1>Módulo 4 - Testes em Contexto Ágil</h1></option>
+            <option value="5"><h1>Módulo 5 - Arquitetura e Engenharia de Software para Testadores</h1></option>
+            <option value="6"><h1>Módulo 6 - Nivelamento Técnico de Programação em Java e SQL</h1></option>
+            <option value="7"><h1>Módulo 7 - Técnicas de Revisão</h1></option>
+            <option value="8"><h1>Módulo 8 - Identificando o que testar</h1></option>
+            <option value="9"><h1>Módulo 9 - Testes de API Rest</h1></option>
+            <option value="10"><h1>Módulo 10 - Testes Web</h1></option>
+            <option value="11"><h1>Módulo 11 - Testes Mobile com Android</h1></option>
+            <option value="12"><h1>Módulo 12 - Testes Desktop</h1></option>
+            <option value="13"><h1>Módulo 13 - Fundamentos e Boas Práticas da Automação de Testes</h1></option>
+            <option value="bonus-git-github"><h1>Módulo Bônus - Git e Github</h1></option>
+        </select>
+        <div class="terminar-modulo">
+            <p>Quando você quer terminar o módulo?</p>
+            <input id="date" type="date">
+        </div>
+        <table id="table">
+            <tr>
+                <th>Tema</th>
+                <th>Duração</th>
+                <th>Status</th>
+            </tr>
+        </table>
+        <div class="final">
+            <div class="buttons">
+            </div>
+        <div class="tempo-dias">
+            <div class="total">
+                <h2 id="tempoTotal">Tempo de Aula Total: _</h2>
+                <h2 id="tempoRestante">Tempo de Aula Restante: _</h2>
+            </div>
+            <div class="horas-dia">
+                <h2>Restam <span id="xdias">_</span> dia(s) para terminar o módulo!</h2>
+                <h2>Serão necessárias <span id="horasDia">_</span> horas por dia de estudo.</h2> 
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="init.js"></script>
+</body>
+</html>
