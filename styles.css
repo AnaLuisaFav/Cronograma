@@ -131,14 +131,15 @@ button#timeButton {
 div.horas-dia {
     letter-spacing: 2px;
     border-radius: 15px;
-    padding: 10px;
+    padding-top: 10px;
+    display: none;
 }
 
 .final {
     display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .tempo-dias {
