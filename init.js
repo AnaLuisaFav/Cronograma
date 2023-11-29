@@ -197,6 +197,18 @@ window.onload = function() {
     }
     if (dataSelecionada) {
         document.getElementById('date').value = formatarDataParaString(new Date(dataSelecionada));
+        const diasRestantes = calcularDiasRestantes(new Date(dataSelecionada));
+        localStorage.setItem('xdias', diasRestantes);
+        const diasDiv = document.querySelector('.horas-dia');
+        const inputDate = document.getElementById('date');
+        if (diasRestantes > 0) {
+            diasDiv.style.display = 'block';
+            inputDate.style.color = '';
+        } else {
+            diasDiv.style.display = 'none';
+            inputDate.style.color = 'red';
+        }
+        document.getElementById('xdias').textContent = `${diasRestantes}`;
     }
 }
 
